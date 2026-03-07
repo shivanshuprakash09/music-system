@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- spotify image jo upar ki traf aati hai link url main -->
+    <link rel="icon" href="/assets/logo.png"> 
+</head>
+<body>
+    <!-- main div -->
+<div class="main">
+        <!-- sidebar -->
+    <div class="sidebar">
+        <!-- sidebar main nav ke componnets -->
+        <div class="nav">
+            <div class="nav-option" style="opacity: 1;">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+        </div>
+            <!-- liberary option in sidebar -->
+        <div class="liberary">
+            <div class="options">
+               <div class="lib-option nav-option">
+                    <img src="/assets/library_icon.png" alt="liberary icon">
+                    <a href="#">Your Library</a>
+                </div> 
+                <!-- icons library ke samne wale -->
+                <div class="lib-icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+                <!-- lib-box options in sidebar -->
+            <div class="lib-box">
+               <div class="box">
+                    <div class="box-p1">Create your first playlist</div>
+                    <div class="box-p2">it's easy we'all help you</div>
+                    <button class="badge">Create playlist</button>
+               </div> 
+
+               <div class="box">
+                    <div class="box-p1">Let's find some poadcats to follow</div>
+                    <div class="box-p2">We'll keep you updated on new episodes</div>
+                    <button class="badge">Browse poadcasts</button>
+               </div> 
+
+            </div>
+        </div>
+    </div>
+
+            <!-- main content -->
+
+    <div class="main-content">
+        <div class="sticky-nav-icons">
+            <div class="nav-icons">
+                <img src="/assets/backward_icon.png" class="hide" alt="backward_icon">
+                <img src="/assets/forward_icon.png" alt="forward_icon">
+            </div>
+          
+            <div class="sticky-nav-options">
+                <button class="badge hide">Explore Premium</button>
+                <button class="badge dark"><i class="fa-solid fa-download margin"></i>Install App</button>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+                    <!-- cards in main content -->
+        <div class="cards">
+            <h2>Recently played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/assets/card1img.jpeg" class="card-image">
+                    <p class="card-title">Top-50 Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+            </div>
+
+            <h2 class="trending">Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/assets/card2img.jpeg" class="card-image">
+                    <p class="card-title">Mahiya Jinna Sohna</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card3img.jpeg" class="card-image">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card4img.jpeg" class="card-image">
+                    <p class="card-title">Alter Ego</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card3img.jpeg" class="card-image">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card4img.jpeg" class="card-image">
+                    <p class="card-title">Alter Ego</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+            </div>
+              <h2 class="trending">Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/assets/card5img.jpeg" class="card-image">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card6img.jpeg" class="card-image">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/card1img.jpeg" class="card-image">
+                    <p class="card-title">Top-50 Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+            </div>
+            <!-- nya trending tag yha ayega -->
+        </div>
+        <div class="footer">
+            <div class="line"></div>
+        </div>
+    </div>
+
+            <!-- for music player niche wala -->
+    <div class="music-player">
+            <!-- niche se phla -->
+        <div class="album">
+            <div class="album-img">
+                <img src="card1img.jpeg">
+            </div>
+            <div class="album-para">
+                <p class="album-para1">Daylight</p>
+                <p class="album-para2">David Kushner</p>
+            </div>
+            <div class="album-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-record-vinyl record"></i>
+            </div>
+        </div>
+
+                <!-- niche se dusra (middle wala) -->
+        <div class="player">
+            <div class="player-control">
+                <img src="/assets/player_icon1.png" class="player-control-icon">
+                <img src="/assets/player_icon2.png" class="player-control-icon">
+                <img src="/assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                <img src="/assets/player_icon4 (1).png" class="player-control-icon">
+                <img src="/assets/player_icon5 (1).png" class="player-control-icon">
+            </div>
+            <div class="playback-bar">
+                <span class="current-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="total-time">03:33</span>
+            </div>
+        </div>
+
+                  <!-- niche se third -->
+        <div class="controls">
+            <div class="controls-icons">
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-rotate"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="range">
+                <input type="range" min="0" max="100" step="10" class="range1">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
